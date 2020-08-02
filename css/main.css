@@ -18,6 +18,11 @@ body {
     font-family: 'Roboto mono', monospace;
 }
 
+.grid-container{
+    max-width: 960px;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     display: inline;
@@ -188,4 +193,59 @@ footer p{
     color: white;
     margin-top: 30px;
     text-align: center;
+}
+.blogpost-img-container{
+    padding: 0 50px 40px;
+}
+.blogpost-img-container img{
+    width: 100%;
+}
+
+.blogpost-main-container h3{
+    border-bottom: 1px solid #e6e9ed;
+    padding-bottom: 20px;
+}
+
+.blogpost-main-container p{
+    text-align: justify;
+}
+
+.blogpost-main-container article h1{
+    font-size: 35px;
+}
+.contact-main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 50px 80px;
+    justify-items: center;
+    align-items: flex-end;
+    background-color: #e6e9ed;
+    grid-gap: 50px;
+}
+
+.contact-left, .contact-right{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    width: 49%;
+    height: 100%;
+    margin-left: 50px;
+}
+.contact-left img, .contact-right img{
+    max-width: 80px;
+    justify-self: center;
+    margin-right: 30px;
+}
+.contact-left div, .contact-right div{
+    display:inherit;
+    align-content: flex-end;
+}
+
+.contact-left a, .contact-right a{
+    text-decoration: underline;
+    width: auto;
+
+}
+.contact-main-container p{
+    margin: 0;
 }
